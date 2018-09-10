@@ -96,9 +96,9 @@ Individual.prototype.mutate = function (config)
 	this.g = mutationFunction(this.g, config.colorMutationRange, 0, 255);
 	this.b = mutationFunction(this.b, config.colorMutationRange, 0, 255);
 	this.width = mutationFunction(this.width, config.sizeMutationRange, 
-		config.sizeLowerBound, config.sizeUpperBound);
+		config.sizeMinBound, config.sizeMaxBound);
 	this.height = mutationFunction(this.height, config.sizeMutationRange, 
-		config.sizeLowerBound, config.sizeUpperBound);
+		config.sizeMinBound, config.sizeMaxBound);
 	return this;
 }
 
