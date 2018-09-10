@@ -171,8 +171,8 @@ Table.prototype.generateHTML_bodyRow = function (generation)
 		html += "<td>";
 		if (x) {
 			html += "<div style='width: "+x.width+
-				"; height: "+x.height+
-				"; background: rgb("+x.r+
+				"px; height: "+x.height+
+				"px; background: rgb("+x.r+
 				", "+x.g+
 				", "+x.b+
 				");'></div>";
