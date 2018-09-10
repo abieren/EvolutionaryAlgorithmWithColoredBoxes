@@ -234,6 +234,7 @@ App.prototype.initializeEvolution = function ()
 	this.offspring = null;
 	
 	this.generateGenerationZero();
+	this.population.sort(fitnessCompareFunction(this.config));
 	this.recordPopulation();
 	this.updateGUI();
 }
